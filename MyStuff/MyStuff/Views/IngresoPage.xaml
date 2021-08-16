@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyStuff.Views.IngresoPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="MyStuffLoginBG">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Padding="40,0,40,0">
+
+            <Entry x:Name="TxtUsuario" Placeholder="Usuario" FontSize="Large" TextColor="#FFFFFF" PlaceholderColor="#B2B2b2">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                        <Setter Property="BackgroundColor" Value="Green"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                        <Setter Property="TextColor" Value="White"/>
+                        <Setter Property="PlaceholderColor" Value="Black"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Entry x:Name="TxtPassword" Placeholder="Constraseña" FontSize="Large" IsPassword="True" TextColor="#FFFFFF" PlaceholderColor="#B2B2b2">
+                <Entry.Triggers>
+                    <Trigger TargetType="Entry" Property="IsFocused" Value="True">
+                        <Setter Property="BackgroundColor" Value="YellowGreen"/>
+                        <Setter Property="FontAttributes" Value="Bold"/>
+                        <Setter Property="TextColor" Value="Black"/>
+                        <Setter Property="FontSize" Value="Body"/>
+                        <Setter Property="PlaceholderColor" Value="Black"/>
+                    </Trigger>
+                </Entry.Triggers>
+            </Entry>
+
+            <Switch x:Name="SwVerPassword" IsToggled="false" Toggled="CmdVerPassword"/>
+
+            <Button x:Name="BtnEntrar" Text="Ingresar" FontSize="Large" Clicked="CmdIngresar" CornerRadius="15" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" />
+
+            <Button x:Name="BtnRegistrarse" Text="Registrarse" FontSize="Large" Clicked="CmdRegistro" CornerRadius="15" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

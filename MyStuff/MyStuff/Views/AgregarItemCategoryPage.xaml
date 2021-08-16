@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyStuff.Views.AgregarItemCategoryPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Categorias!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <Entry x:Name="TxtCategoria" Placeholder="Categoria" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Text" />
+
+
+            <Button x:Name="BtnGuardar" Text="Guardar" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" Clicked="BtnGuardar_Clicked" />
+            <Button x:Name="BtnCancelar" Text="Cancelar" BackgroundColor="Firebrick" TextColor="White" Clicked="BtnCancelar_Clicked"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

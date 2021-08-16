@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyStuff.Views.AgregarItemPage" BackgroundImageSource="pageBG">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Agregar Activo"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                HorizontalTextAlignment="Center"
+                FontSize="20"/>
+
+            <Entry x:Name="TxtNombre" Placeholder="Nombre de Activo" VerticalOptions="CenterAndExpand" />
+
+            <Editor x:Name="TxtDescripcion" Placeholder="Descripción" VerticalOptions="CenterAndExpand" />
+
+            <Entry x:Name="TxtCosto" Placeholder="Costo" VerticalOptions="CenterAndExpand" />
+
+            <Picker x:Name="CboMoneda" Title="Moneda" VerticalOptions="CenterAndExpand"
+            ItemDisplayBinding="{Binding CurrencyName}" 
+            SelectedItem="{Binding MyCurrency}"/>
+
+            <Entry x:Name="TxtSerie" Placeholder="Serie" VerticalOptions="CenterAndExpand" />
+
+            <Entry x:Name="TxtDepreciacion" Placeholder="% Depreciación" VerticalOptions="CenterAndExpand" />
+
+            <Picker x:Name="CboMarca" Title="Marca" VerticalOptions="CenterAndExpand">
+                <Picker.Items>
+                    <x:String>ASUS</x:String>
+                    <x:String>Casio</x:String>
+                    <x:String>HP</x:String>
+                    <x:String>Samsung</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker x:Name="CboCategoria" Title="Categoría" VerticalOptions="CenterAndExpand">
+                <Picker.Items>
+                    <x:String>Electrónicos</x:String>
+                    <x:String>Ropa</x:String>
+                    <x:String>Ocio</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker x:Name="CboLoc" Title="Localización" VerticalOptions="CenterAndExpand">
+                <Picker.Items>
+                    <x:String>Cuarto</x:String>
+                    <x:String>Oficina</x:String>
+                    <x:String>General</x:String>
+
+                </Picker.Items>
+            </Picker>
+
+            <Picker x:Name="CboProveedor" Title="Proveedor" VerticalOptions="CenterAndExpand">
+                <Picker.Items>
+                    <x:String>CDC</x:String>
+                    <x:String>Extreme Tech</x:String>
+                    <x:String>Intelec</x:String>
+
+                </Picker.Items>
+            </Picker>
+
+            <Entry x:Name="TxtFact" Placeholder="Numero Factura" VerticalOptions="CenterAndExpand" />
+
+                <Button x:Name="BtnAceptar" Text="Aceptar" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" Clicked="BtnAceptar_Clicked" />
+            <Button x:Name="BtnCancelar" Text="Cancelar" BackgroundColor="Firebrick" TextColor="White" Clicked="BtnCancelar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

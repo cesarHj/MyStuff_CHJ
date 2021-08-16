@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyStuff.Views.SelectorDeAccionPage" BackgroundImageSource="pageBG">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid>
+            
+            <Label Text="Selecciona la Acción"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                  HorizontalTextAlignment="Center"
+                   FontSize="50"/>
+
+            <FlexLayout x:Name="FlAcciones" Wrap="Wrap" JustifyContent="SpaceEvenly" Direction="Row" Padding="0,0,0,0"
+                        AlignContent="Center" >
+
+
+                <Button x:Name="BtnAdd" Text="Agregar Activo" 
+                        BackgroundColor="Green" TextColor="White" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="30"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnAdd_Clicked"
+                        Margin="2,2,5,20"/>
+
+                <Button x:Name="BtnVerLista" Text="Ver Activos" 
+                        BackgroundColor="SlateBlue" TextColor="White" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="30"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnVerLista_Clicked"
+                        Margin="2,2,5,20"/>
+                
+                <Button x:Name="BtnConfig" Text="Configuración" 
+                        BackgroundColor="#F7CD0D" TextColor="#121209" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="20"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnConfig_Clicked"
+                        Margin="2,2,5,20"/>
+
+                <Button x:Name="BtnSalir" Text="Salir" 
+                        BackgroundColor="Brown" TextColor="White" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="20"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnSalir_Clicked"
+                        Margin="2,2,5,20"/>
+
+                <Button x:Name="BtnMarcas" Text="Marcas" 
+                        BackgroundColor="Blue" TextColor="White" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="20"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnMarcas_Clicked"
+                        Margin="2,2,5,20"/>
+                
+                <Button x:Name="BtnCategorias" Text="Categorías" 
+                        BackgroundColor="Coral" TextColor="White" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="20"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnCategorias_Clicked"
+                        Margin="2,2,5,20"/>
+                
+                <Button x:Name="BtnLoc" Text="Localizaciones" 
+                        BackgroundColor="Cornsilk" TextColor="Black" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="20"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnLoc_Clicked"
+                        Margin="2,2,5,20"/>
+                
+                <Button x:Name="BtnProveedores" Text="Proveedores" 
+                        BackgroundColor="#479974" TextColor="White" 
+                        HeightRequest="200" WidthRequest="200"                      
+                        FontSize="20"
+                        HorizontalOptions="Center" 
+                        CornerRadius="20"
+                        Clicked="BtnProveedores_Clicked"
+                        Margin="2,2,5,20"/>
+
+            </FlexLayout>
+
+
+            
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

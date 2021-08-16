@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyStuff.Views.RegistroPage">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#191616" Padding="20, 50, 20, 50">
+
+            <Entry x:Name="TxtUsuario" Placeholder="Email Usuario" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Email" />
+            <Entry x:Name="TxtNombreUsuario" Placeholder="Nombre" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2"/>
+            <Entry x:Name="TxtPassword" Placeholder="Contraseña" FontSize="Large" IsPassword="True" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" />
+            <Entry x:Name="TxtPassword2" Placeholder="Confirmar Contraseña" FontSize="Large" IsPassword="True" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" />
+            <Entry x:Name="TxtTelefono" Placeholder="Teléfono" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Telephone" />
+            <Entry x:Name="TxtBackUpEmail" Placeholder="Email de Respaldo" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Email"/>
+
+            <Button x:Name="BtnAceptar" Text="Aceptar" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" Clicked="BtnAceptar_Clicked" />
+            <Button x:Name="BtnCancelar" Text="Cancelar" BackgroundColor="Firebrick" TextColor="White" Clicked="BtnCancelar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

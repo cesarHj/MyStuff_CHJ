@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyStuff.Views.AgregarProveedorPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Proveedores o Tiendas!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+
+            <Entry x:Name="TxtNombre" Placeholder="Punto de Venta" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Text" />
+            <Entry x:Name="TxtTelefono" Placeholder="Telefono" FontSize="Large" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Telephone"/>
+            <Entry x:Name="TxtCorreo" Placeholder="Email" FontSize="Large" IsPassword="True" TextColor="White" FontAttributes="Bold" PlaceholderColor="#B2b2b2" Keyboard="Email" />
+           
+            <Button x:Name="BtnGuardar" Text="Guardar" BackgroundColor="Green" TextColor="White" FontAttributes="Bold" Clicked="BtnGuardarClicked" />
+            <Button x:Name="BtnCancelar" Text="Cancelar" BackgroundColor="Firebrick" TextColor="White" Clicked="BtnCancelar_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
